@@ -52,3 +52,50 @@ watchNotification.addEventListener('click', () => {
     renderDetails(currentMovie)
 })
 
+function sumTwoNumbers(num1, num2){
+    return num1 + num2
+}
+
+function subtractTwoNumbers(num1, num2){
+    return num1 - num2
+}
+function multiplyTwoNumbers(num1, num2){
+    return num1 * num2
+}
+// create our dialog ref 
+const dialogRef = useRef(null);
+
+// function to open the dialog
+const handleShowDialog = () => {
+    dialogRef.current.showModal();
+};
+// function to close the dialog
+function onClose() {
+    dialogRef.current.close();
+}
+
+//   start of our dialog box
+                // <dialog ref={dialogRef} className="favDialog">
+                //     <button className='cancel-btn-wrap' onClick={onClose}>
+                //         <img className='cancel-btn' src='/src/images/cancel.png'/>
+                //     </button>
+                //     <div className='post-name'>
+                //         <h1>{users.name}</h1>
+                //     </div>
+                //     <form className='post-form' onSubmit={handleSubmit}>
+                //         <textarea className='post-textarea' onChange={handleContentChange} placeholder='Write your post' />
+                //         <button onClick={onClose} type='submit' className="submit-btn">
+                //             Submit
+                //         </button>
+                //     </form>
+                // </dialog>
+                // // dialog box ends here
+                // <div className='post-title-list'>
+                // {/* button to open dialog box */}
+                // <div className="post-title" onClick={handleShowDialog}>
+                //     <h5>What fuels your ✨sparkle✨ today?</h5>
+                // </div>
+                // <div className='post-list'>
+                //     <p className='post-p' >{postList}</p>
+                // </div>
+                // </div>
